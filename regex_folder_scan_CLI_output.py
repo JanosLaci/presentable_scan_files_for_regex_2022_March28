@@ -25,8 +25,6 @@ def main():
     start_line = 0
     end_line = 1_000_000
 
-    print(start_line, end_line)
-
     print(args.start)
     print(args.end)
 
