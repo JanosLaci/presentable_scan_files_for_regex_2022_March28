@@ -83,7 +83,7 @@ def main():
                             print(f'    --->>>{match.group(0)}<<<---')
                             print("\n")
                             #if args.output:
-                            with open('output_scan_results.csv', "a") as writer:
+                            with open('output_scan_results.csv', "a", encoding="UTF-8") as writer:
                                 # r"file_containing_regex,line_beginning,line_ending,type_found,datetime_of_scan"
                                 line_to_append = f"{path.name};{line_beginning};{line_ending};{pattern_select_star};{current_date_and_time}\n"
                                 print(line_to_append)
@@ -108,7 +108,7 @@ def main():
                             print(f'    --->>>{match.group(0)}<<<---')
                             print("\n")
                             #if args.output:
-                            with open('output_scan_results.csv', "a") as writer:
+                            with open('output_scan_results.csv', "a", encoding="UTF-8") as writer:
                                 # r"file_containing_regex,line_beginning,line_ending,type_found,datetime_of_scan"
                                 line_to_append = f"{path.name};{line_beginning};{line_ending};{pattern_select_star};{current_date_and_time}\n"
                                 print(line_to_append)
